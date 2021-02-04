@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Men Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  </head>
+
+  <body>
+    <header>
+
+        <img src='./media/logo.jpg' class='logo'>
+        <nav>
+
+          <ul>
+
+            <li>
+                <a href="welcome.html">Welcome</a>
+              </li>
+              <li>
+                <a href="products.html?type=men">Men</a>
+              </li>
+              <li>
+                <a href="products.html?type=women">Women</a>
+              </li>
+              <li>
+                <a href="products.html?type=sales">Sales</a>
+              </li>
+              <li class='cart'>
+                <a href="addcart.html">My Cart</a>(<span>0</span>)
+              </li>
+              <li>
+                <a href="login.html">Logout</a>
+              </li>
+  
+          </ul>
+
+        </nav>
+
+    </header>
+<div id='products-details-container' style="padding:10px">
+    <table style="margin-left: auto;
+    margin-right: auto;">
+        <tr>
+            <td>
+                <img src="" alt="" id='prodimg' height="500px" width="500px"/>
+            </td>
+            <td style="font-size: 50px;">
+                <div id="name"></div>
+                <div id="price"></div>
+                <div id="add"></div>
+                <button id='man' onclick="addcart()">Add to cart</button>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td colspan="2" >
+
+               
+            </td> -->
+            <!-- <td></td> -->
+        </tr>
+    </table>
+</div>
+
+<script src="./js/display.js"></script>
+<script src="./js/cart.js"></script>
+   <script>
+       const urlPara = new URLSearchParams(window.location.search);
+        var type  = urlPara.get('type');
+        var id= urlPara.get('id');
+        let prodimg = document.querySelector("#prodimg");
+        let name = document.querySelector("#name");
+        let price = document.querySelector("#price");
+        prodimg.src=products[type][id].image
+        name.innerHTML='Name:'+products[type][id].name
+        price.innerHTML='Price :$'+products[type][id].price
+
+        function addcart(){
+            // cartNumbers(products[type][id]);
+            // totalCost(products[type][id]);
+            // alert('product added to cart')
+        }
+   </script>
+
+
+  </body>
+</html>

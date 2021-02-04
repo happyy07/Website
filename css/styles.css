@@ -1,0 +1,290 @@
+body{
+  margin: 0;
+	background-color:#bbbbb;
+	color:#4e4e4e;
+	font-family:Times New Roman;
+}
+
+
+
+.logo{
+	float:left;
+  height: 60px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+header{
+	overflow:hidden;
+	margin:auto;
+	background-color:#e7e7e7;
+	color:#4e4e4e;
+	max-height:50px;
+	padding: 0px 5px 5px 5px;
+
+}
+
+header a{
+  text-decoration: none;
+}
+
+header nav{
+
+	float:right;
+
+}
+
+header nav ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+
+	float: left;
+	display:inline;
+	padding:0px 20px;
+	margin-top:20px;
+}
+
+header a:hover{
+	color:#4e4e4e;
+	font-weight:bold;
+}
+
+ .cover_image{
+      background-image: url(../media/Homepage.jpg);
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .welcome_image{
+       background-image: url(../media/welcome.jpg);
+       height: 500px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+   }
+
+   .for-welcome{
+
+     padding: 50px 100px 100px 100px;
+   }
+
+
+    .for-form{
+
+      padding: 100px 100px 100px 400px;
+   }
+
+    .for-welcome h1{
+      color: #FFFFFF;
+      font-size: 70px;
+  }
+
+  .block{
+  	float:left;
+  	width:25%;
+    height: auto;
+  	box-sizing: border-box;
+  	text-align:center;
+  	overflow:hidden;
+  	padding-left:5px;
+  	line-height:1.6;
+  }
+
+  .sale{
+    float:left;
+    width:33.3%;
+    height: auto;
+    box-sizing: border-box;
+    text-align:center;
+    overflow:hidden;
+    padding-left:5px;
+    line-height:1.6;
+  }
+
+.sale h2{
+  text-decoration: line-through;
+}
+  #man{
+  	background-color:#fff;
+  	padding-top:10px;
+  	min-height:20px;
+  	color:black;
+  	text-align: center;
+  	border:2px solid black;
+    text-decoration: none;
+  }
+
+  #man:hover{
+    color: #fff;
+    background-color:black;
+  }
+
+    .for-cart{
+      float:left;
+      width:50%;
+      padding:20px 50px 10px 45px;
+      margin-top: 20px;
+      box-sizing: border-box;
+
+    }
+
+  input[type=text]{
+    width:50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+
+  input[type=submit] {
+    width:50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  footer{
+  	overflow:hidden;
+  	background-color:#202020;
+  	font-size:15 px;
+  	color:#bbbbbb;
+  	padding:25px;
+  }
+
+  .block2{
+  	float:left;
+  	width:20%;
+  	box-sizing: border-box;
+  	text-align:left;
+  	overflow:hidden;
+  	padding:25px;
+  	line-height:1.6;
+
+  }
+
+  .block2 li:first-child{
+  	font-size:25px;
+  	color: #bbbbbb;
+  }
+
+  .block2 img:first-child{
+    height: 50px;
+
+  }
+
+  .for-sale{
+    text-align: center;
+    color:#00008B;
+  }
+
+  .cart
+  {
+      text-decoration: none;
+  }
+
+  .product_container{
+    max-width: 550px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+  }
+
+  .product_container ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+.product ion-icon{
+  cursor: pointer;
+}
+
+.product{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product img{
+  width: 75px;
+}
+
+  .product_header{
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 5px solid lightgrey;
+    margin: 0 auto;
+  }
+
+  .product_title{
+    width: 45%;
+  }
+
+  .price{
+    width: 15%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+  }
+
+  .quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+  }
+
+  .total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+  }
+
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding; 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
+  padding: 10px 0;
+}
+
+.basketTotalTitle{
+  width: 30%;
+}
+
+.basketTotal{
+  width: 10%;
+  padding-right:  10px;
+}
